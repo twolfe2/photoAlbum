@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <button class="btn btn-success" ui-sref='addImage({album: album})'>Add Image</button>
+    <button class="btn btn-success btn-block" ui-sref='addImage({album: album})'>Add Image</button>
     <div class="col-xs-3" ng-repeat="image in album.images">
       <a ui-sref='imageInfo({imageId: image._id, image: image, album: album})' class="thumbnail">
         <img src="{{image.url}}" alt="image">
